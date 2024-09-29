@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Battledome Weapons Pre Load Settings</title>
+    <!-- Link to Roboto Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="option_style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <div  class="container">
+        <div class="tabs">
+            <button class="tab-button active" id="preset1Tab">Preset 1</button>
+            <button class="tab-button" id="preset2Tab">Preset 2</button>
+        </div>
+
+        <div id="preset1" class="tab active">
+            <label>
+                Ability
+                <input id="ability1" />
+            </label>
+
+            <label>
+                Equipment #1
+                <input id="equipment1" />
+            </label>
+
+            <label>
+                Equipment #2
+                <input id="equipment2" />
+            </label>
+
+            <label class="switch-label">
+                Skip Replay
+                <input type="checkbox" id="skipReplay1" class="toggle-switch" />
+                <span class="slider round"></span>
+            </label>
+
+            <label class="switch-label">
+                Collect Rewards
+                <input type="checkbox" id="collectRewards1" class="toggle-switch" />
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div id="preset2" class="tab">
+            <label>
+                Ability
+                <input id="ability2" />
+            </label>
+
+            <label>
+                Equipment #1
+                <input id="equipment1b" />
+            </label>
+
+            <label>
+                Equipment #2
+                <input id="equipment2b" />
+            </label>
+
+            <label class="switch-label">
+                Skip Replay
+                <input type="checkbox" id="skipReplay2" class="toggle-switch" />
+                <span class="slider round"></span>
+            </label>
+
+            <label class="switch-label">
+                Collect Rewards
+                <input type="checkbox" id="collectRewards2" class="toggle-switch" />
+                <span class="slider round"></span>
+            </label>
+        </div>
+          
+          <label id="statusLabel" class="status-label"></label>
+          <button class="preset-button" id="equipment">Save</button>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

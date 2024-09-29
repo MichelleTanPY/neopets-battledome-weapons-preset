@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Battledome Weapons Loader",
+  "version": "1.0",
+  "description": "Helps fellow Neopians preload battledome weapons when fighting opponents in Battledome, 2 presave slots are available!",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "menu.html",
+    "default_icon": "logo.png"
+  },
+  "options_page": "options.html"
+}
