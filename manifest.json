@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Battledome Weapons Loader",
+  "name": "Neopets Battledome Weapons Loader",
   "version": "1.0",
   "description": "Helps fellow Neopians preload battledome weapons when fighting opponents in Battledome, 2 presave slots are available!",
   "permissions": ["activeTab", "scripting", "storage"],

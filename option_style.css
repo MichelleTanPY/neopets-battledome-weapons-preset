@@ -1,127 +1,128 @@
 /* General reset and font setup */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Proper full viewport height setup and center alignment */
-  body, html {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color: #f0f0f0; /* Background color */
-  }
-  
-  /* Container styling */
-  .container {
-    display: flex;
-    flex-direction: column; /* Ensure elements stack vertically */
-    justify-content: center;
-    align-items: center;
-    width: 300px; /* Set the width */
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-  
-  /* Input styling */
-  input {
-    background: #FFFFFF;
-    border: 1px solid #D9D9D9;
-    border-radius: 8px;
-    padding: 12px 16px;
-    width: 100%;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Label styling */
-  label {
-    display: block;
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #333;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    padding: 5px;
-  }
-  
-  /* Switch label styling */
-  .switch-label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-    padding: 5px;
-    width: 100%; /* Full width switch */
-  }
-  
-  /* Toggle switch slider */
-  .toggle-switch {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-    background-color: #ccc;
-    border-radius: 34px;
-    cursor: pointer;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 2px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #169b21;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-  
-  /* Round slider for material look */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  
-  /* Button */
-  .preset-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    display: block;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
-  /*Diabled style*/
-  input:disabled, 
+/* Proper full viewport height setup and center alignment */
+body,
+html {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #f0f0f0; /* Background color */
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column; /* Ensure elements stack vertically */
+  justify-content: center;
+  align-items: center;
+  width: 300px; /* Set the width */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Input styling */
+input {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+
+/* Switch label styling */
+.switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  width: 100%; /* Full width switch */
+}
+
+/* Toggle switch slider */
+.toggle-switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #169b21;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Round slider for material look */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Button */
+.preset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+/*Diabled style*/
+input:disabled,
 button:disabled {
   background-color: #ccc; /* Grey background */
   color: #666; /* Grey text */
@@ -130,66 +131,66 @@ button:disabled {
 
 /* Styling the status label */
 .status-label {
-    display: block;
-    margin-top: 15px; /* Add some spacing */
-    padding: 10px 20px; /* Padding for a better look */
-    font-size: 16px; /* Nice readable font size */
-    font-weight: bold; /* Bold text */
-    background-color: #d4edda; /* Light green background */
-    color: #155724; /* Dark green text color */
-    border: 1px solid #c3e6cb; /* Subtle border */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center text */
-    width: 100%; /* Full width inside the container */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s ease; /* Fade-in transition */
+  display: block;
+  margin-top: 15px; /* Add some spacing */
+  padding: 10px 20px; /* Padding for a better look */
+  font-size: 16px; /* Nice readable font size */
+  font-weight: bold; /* Bold text */
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Dark green text color */
+  border: 1px solid #c3e6cb; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  width: 100%; /* Full width inside the container */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Fade-in transition */
 }
 
 .status-label.show {
-    opacity: 1; /* Show the label when the class is added */
+  opacity: 1; /* Show the label when the class is added */
 }
 
 .status-label.hide {
-    opacity: 0; /* Hide the label */
+  opacity: 0; /* Hide the label */
 }
 /* Tab styling */
 .tab {
-    display: none; /* Hide tabs by default */
-    width: 100%; /* Make tabs take full width */
+  display: none; /* Hide tabs by default */
+  width: 100%; /* Make tabs take full width */
 }
 
 .tab.active {
-    display: block; /* Show active tab */
+  display: block; /* Show active tab */
 }
 
 .tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100%; /* Full width */
 }
 
 .tab-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #848485; /* Default background color */
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    flex: 1; /* Allow buttons to take equal space */
-    margin: 0 5px; /* Add margin between buttons */
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  border: none;
+  background-color: #848485; /* Default background color */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  flex: 1; /* Allow buttons to take equal space */
+  margin: 0 5px; /* Add margin between buttons */
+  transition: background-color 0.3s;
 }
 
 .tab-button:hover {
-    background-color: #737373; /* Darker shade on hover */
+  background-color: #737373; /* Darker shade on hover */
 }
 
 .tab-button.active {
-    background-color: #0056b3; /* Darker shade for active tab */
+  background-color: #0056b3; /* Darker shade for active tab */
 }
 
 /* Optional: Style for inactive tabs */
 .tab-button:not(.active) {
-    background-color: #848485; /* Keep inactive tabs in a light gray */
+  background-color: #848485; /* Keep inactive tabs in a light gray */
 }
