@@ -195,7 +195,7 @@ function loadEquipment(
   if (collectRewards) {
     observerButton("button.end_ack.collect", (el) => el.click());
   }
-
+  observerButton("button.caction", (el) => el.click());
   // Function to observe status and skip replay
   function observeStatusAndSkipReplay(skipOnce) {
     const statusElement = document.querySelector("#statusmsg");
