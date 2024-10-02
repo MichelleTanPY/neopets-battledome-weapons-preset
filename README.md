@@ -46,17 +46,17 @@ This project is licensed under the MIT License.
 
 ### Extension Popup
 
-![Extension Popup](Screenshot/Extension.png "Extension Popup Screenshot")
+![Extension Popup](Screenshot/Extension.png)
 
 ### Extension Settings
 
-![Settings](Screenshot/Settings.png "Settings Screenshot")
+![Settings](Screenshot/Settings.png)
 
 ### Battle Mode
 
 Sometimes, you might have to wait for the opponent chat to show up before loading the weapons.
 
-![Battle Mode](Screenshot/Battle.png "Battle Mode Screenshot")
+![Battle Mode](Screenshot/Battle.png)
 
 ## Favicon Attribution
 
