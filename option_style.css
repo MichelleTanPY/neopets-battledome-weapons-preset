@@ -194,3 +194,24 @@ button:disabled {
 .tab-button:not(.active) {
   background-color: #848485; /* Keep inactive tabs in a light gray */
 }
+
+/* Footer style */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

@@ -1,8 +1,8 @@
-# Battledome Weapons Loader
+# Neopets Battledome Weapons Preset
 
 ## Overview
 
-**Battledome Weapons Loader** is a Chrome extension designed to assist Neopians in preloading battledome weapons while fighting opponents in the Battledome. With this extension, users can easily save and manage two sets of weapon configurations, ensuring they are always prepared for battle.
+**Neopets Battledome Weapons Preset** is a Chrome extension designed to assist Neopians in preloading battledome weapons while fighting opponents in the Battledome. With this extension, users can easily save and manage two sets of weapon configurations, ensuring they are always prepared for battle.
 
 ## Features
 
@@ -21,7 +21,7 @@
 
 ## Usage
 
-1. Click on the **Battledome Weapons Loader** icon in the Chrome toolbar.
+1. Click on the **Neopets Battledome Weapons Preset** icon in the Chrome toolbar.
 2. Use the provided interface to enter your ability and equipment for each preset.
 3. Click the "Save" button to store your settings.
 4. Select a preset to preload your saved configurations whenever you're ready for battle.
@@ -42,6 +42,29 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 This project is licensed under the MIT License.
 
+## Screenshots
+
+### Extension Popup
+
+![Extension Popup](screenshot/Extension.png "Extension Popup Screenshot")
+
+### Extension Settings
+
+![Settings](screenshot/Settings.png "Settings Screenshot")
+
+### Battle Mode
+
+Sometimes, you might have to wait for the opponent chat to show up before loading the weapons.
+
+![Battle Mode](screenshot/Battle.png "Battle Mode Screenshot")
+
+## Favicon Attribution
+
+The favicon emoji graphics used in this project are from the open-source project [Twemoji](https://twemoji.twitter.com/), licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
+The graphics are © 2020 Twitter, Inc. and other contributors.
+
+Changes were made to adapt the original graphics for use as a favicon.
+
 ## Contact
 
 For questions or feedback, feel free to reach out to the developer.
@@ -49,6 +72,6 @@ Any bugs or issues, please create a [new issue ticket](https://github.com/Michel
 
 ## Support
 
-If you enjoy this extension and would like to support its development, you can buy me a coffee at [buymeacoffee.com/michelletanpy](https://buymeacoffee.com/michelletanpy).
+If you enjoy this extension and would like to support its development, you can buy me a coffee at [buymeacoffee.com/michelletanpy](https://buymeacoffee.com/michelletanpy). ❤
 
-Thank you for using Battledome Weapons Loader! May your battles be victorious!
+Thank you for using Neopets Battledome Weapons Preset! May your battles be victorious!

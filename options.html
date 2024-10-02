@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Battledome Weapons Pre Load Settings</title>
+    <title>Neopets Battledome Weapons Preset</title>
     <!-- Link to Roboto Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -37,6 +37,12 @@
         </label>
 
         <label class="switch-label">
+          Fight
+          <input type="checkbox" id="fight" class="toggle-switch" />
+          <span class="slider round"></span>
+        </label>
+
+        <label class="switch-label">
           Skip Replay
           <input type="checkbox" id="skipReplay1" class="toggle-switch" />
           <span class="slider round"></span>
@@ -66,6 +72,12 @@
         </label>
 
         <label class="switch-label">
+          Fight
+          <input type="checkbox" id="fight2" class="toggle-switch" />
+          <span class="slider round"></span>
+        </label>
+
+        <label class="switch-label">
           Skip Replay
           <input type="checkbox" id="skipReplay2" class="toggle-switch" />
           <span class="slider round"></span>
@@ -80,6 +92,19 @@
 
       <label id="statusLabel" class="status-label"></label>
       <button class="preset-button" id="equipment">Save</button>
+
+      <!-- Footer with "Made with ♥" -->
+      <footer class="footer">
+        <p class="footer-text">
+          Made with <span style="color: red">&#10084;</span>
+          <a
+            href="https://github.com/MichelleTanPY/battledome-preset"
+            target="_blank"
+            class="footer-link"
+            >Neopets Battledome Weapons Loader
+          </a>
+        </p>
+      </footer>
     </div>
     <script src="options.js"></script>
   </body>

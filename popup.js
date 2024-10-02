@@ -13,7 +13,14 @@ document.getElementById("settings").addEventListener("click", () => {
 document.getElementById("preset1").addEventListener("click", () => {
   // Retrieve stored settings for Preset 1
   chrome.storage.sync.get(
-    ["ability1", "equipment1", "equipment2", "skipReplay1", "collectRewards1"],
+    [
+      "ability1",
+      "equipment1",
+      "equipment2",
+      "fight",
+      "skipReplay1",
+      "collectRewards1",
+    ],
     (data) => {
       // Pass the retrieved data to the content script
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -24,6 +31,7 @@ document.getElementById("preset1").addEventListener("click", () => {
             data.ability1 || "",
             data.equipment1 || "",
             data.equipment2 || "",
+            data.fight || false,
             data.skipReplay1 || false,
             data.collectRewards1 || false,
           ],
@@ -40,6 +48,7 @@ document.getElementById("preset2").addEventListener("click", () => {
       "ability2",
       "equipment1b",
       "equipment2b",
+      "fight2",
       "skipReplay2",
       "collectRewards2",
     ],
@@ -53,6 +62,7 @@ document.getElementById("preset2").addEventListener("click", () => {
             data.ability2 || "",
             data.equipment1b || "",
             data.equipment2b || "",
+            data.fight2 || false,
             data.skipReplay2 || false,
             data.collectRewards2 || false,
           ],
@@ -88,6 +98,7 @@ function loadEquipment(
   ability,
   equipment1,
   equipment2,
+  fight,
   skipReplay,
   collectRewards
 ) {
@@ -182,8 +193,11 @@ function loadEquipment(
     }
   });
 
-  // Observe various buttons for the game and handle click actions
-  observeClassChanges(".caction.inactive", "caction", "inactive");
+  // If true, click flight
+  if (fight) {
+    observeClassChanges(".caction.inactive", "caction", "inactive");
+    observerButton("button.caction", (el) => el.click());
+  }
 
   // If skipReplay is true, handle skipping replay
   if (skipReplay) {
@@ -195,7 +209,7 @@ function loadEquipment(
   if (collectRewards) {
     observerButton("button.end_ack.collect", (el) => el.click());
   }
-  observerButton("button.caction", (el) => el.click());
+
   // Function to observe status and skip replay
   function observeStatusAndSkipReplay(skipOnce) {
     const statusElement = document.querySelector("#statusmsg");
